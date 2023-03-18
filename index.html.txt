@@ -1,0 +1,156 @@
+** start of undefined **
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+
+   <body>
+    <h1 id="title"><span>Survey Form</span><h1>
+      <p id="description"> <span>That is a Survey Form</span> <p>
+        
+        <form id="survey-form">
+          <label id="name-label"> Enter your First name</label>
+           <input id="name" type="text" placeholder="Enter your name" required>
+
+          <label id="email-label"> Enter your Email</label>
+           <input id="email" type="email" placeholder="Enter your Email" required>
+
+          <label id="number-label"> Enter your Age</label>
+           <input id="number" type="number" placeholder="Age" name="age" min="10" max="99">
+
+          <label id="rols">Which option best describes your current role?</label>
+           <select id="dropdown">
+             <option value="Student">Student</option>
+             <option value="Full Time Job">Full Time Job </option>
+           </select>
+            
+            <label id="recommendation">Would you recommend freeCodeCamp to a friend?</label>
+             <input id="radio" type="radio" name="recommendation" value="Definetly"><span>Definetly</span><br/>
+             <input  id="radio" type="radio" name="recommendation" value="Maybe"> <span>Maybe</span></span><br/>
+
+            <label id="improvements">What would you like to see improved? (Check all that apply)</label>
+             <input id="checkbox" type="checkbox" value="Front-end Projekts"> <span>Front-end Projekts<br/>
+             <input id="checkbox" type="checkbox" value="Back-end Projects"> Back-end Projects<br/>
+             <input id="checkbox" type="checkbox" value="Data Visualization"> Data Visualization<br/>
+             <input id="checkbox" type="checkbox" value="Challenges"> Challenges<br/>
+             <input id="checkbox" type="checkbox" value="Open Source Community"> Open Source Community<br/>
+             <input id="checkbox" type="checkbox" value="Gitter help rooms"> Gitter help rooms<br/>
+             <input id="checkbox" type="checkbox" value="Videos"> Videos<br/>
+             <input id="checkbox" type="checkbox" value="City Meetups"> City Meetups<br/>
+             <input id="checkbox" type="checkbox" value="Wiki"> Wiki<br/>
+             <input id="checkbox" type="checkbox" value="Forum"> Forum<br/>
+             <input id="checkbox" type="checkbox" value="Additional Courses"> Additional Courses</span><br/>
+
+          <label for="Comments"> Any comments or suggestions?</label>
+           <textarea id="comments" name="comments" placeholder="Any comments or suggestions?">Any comments or suggestions?</textarea>
+            
+            <button type="submit" id="submit">Submit
+
+   </body>
+
+** end of undefined **
+
+** start of undefined **
+
+#title {
+  width: 1000px;
+  margin: auto;
+  border: 3px solid white;
+  text-align:center;
+}
+
+#description {
+  width: 400px; 
+  margin:auto;
+  border: 2px;
+  text-align: center;
+  font-style:italic;
+}
+
+#name-label{
+  margin-top: 2em;
+}
+
+#survey-form{
+  width: 1000px;
+  margin:auto;
+}
+
+input{
+  margin-left: 0;
+  margin-top: 0.5em;
+  margin-bottom: 2em; 
+  font-size: 1em;
+}
+
+select{
+  margin-left: 0;
+  margin-top: 0.5em;
+  margin-bottom: 2em; 
+  font-size: 1em;
+}
+
+#checkbox, #radio{
+  margin-left: 0;
+  margin-top:0.5em;
+  margin-bottom: 2em; 
+  font-size: 0.5em;
+  color:white;
+}
+
+label{
+    display: block;
+    font-size: 1em;
+    color: white;
+    margin-bottom: 0.1em;
+}
+
+#comments{
+    width: 100%;
+    font-size: 1.1em; 
+    padding: 4px;
+    font-family: inherit;
+    font-weight: lighter;
+    border-radius: 0.3em;
+} 
+
+#submit{
+  font-size:2em;
+  margin-top:0.5em; 
+  text-align:center;
+  }
+
+span{
+  color: white;
+}
+
+  /* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+** end of undefined **
+
